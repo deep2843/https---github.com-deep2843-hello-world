@@ -90,5 +90,5 @@ datafinal <- aggregate(data2,by=list(activity=data2$Activity_Name,subject=data2$
 
 datafinal<-datafinal[,-c(2,3,84)]
 
-write.csv(datafinal,file="./data_final.csv")
+write.table(datafinal,file="./data_final.txt",row.name=FALSE)
 
